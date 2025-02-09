@@ -1,0 +1,29 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 12px;
+  margin: 0 auto;
+  padding: 5px;
+  list-style: none;
+}
+
+.galleryItem {
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem:hover {
+  transform: scale(1.05);
+}
+
+img {
+  display: block;
+  pointer-events: auto;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
